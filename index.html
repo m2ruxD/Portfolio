@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    
+  <header>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#education">Education</a>
+      <a href="#seminars">Trainings</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Job Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+<section id="home">
+  <div class="home-flex">
+    <div class="home-text">
+      <h1 id="home">Welcome To my Portfolio</h1>
+      <h1 id="homee">Rhodnemar T. Requino</h1>
+      <p id="homee">2nd Year Student at CITE Technical Institute Inc.</p>
+      <p id="homee">Welcome to my very own Website Portfolio where you can find out more about me and what I do!</p>
+      
+    </div>
+    <img src="images/home.jpg" alt="home" class="home-pic">
+  </div>
+</section>
+
+<section id="profile">
+  <h2 class="color">My Profile</h2>
+  <div class="card profile-flex">
+    <div class="profile-text">
+      <p class="color">Hello. I am Rhodnemar T. Requino, 20 Years Old and Currently Living in Tisa, Cebu City. 
+      I am a Second Year Student at CITE Technical Institute Inc. where I am pursuing My Degree in Computer Engineering. I am also currently 
+      an OJT in Alliance Software Inc. I have been using the internet since I was born and this portfolio will make you learn more about me.</p>
+      <p class="color">Here are some of my hobbies:<p>
+      <ul>
+        <li class="color">Video Editing</li>
+        <li class="color">Low Code</li>
+        <li class="color">Simple Photography</li>
+      </ul>
+    </div>
+    <img src="images/profile.jpg" alt="Profile" class="profile-pic">
+  </div>
+</section>
+
+  <section id="education">
+    <h2 class="color">My Educational History</h2>
+    <div class="card">
+      <p class="color"><strong>First Elementary:</strong> Labangon Elementary School </p>
+      <p class="color"><strong>Year Completed:</strong> 2011-2012</p>
+      <p class="color"><strong>Achievements:</strong> None </p>
+      <p class="color"><strong>Second Elementary:</strong> Dories Educational Center for Children's Assistance Program (DECCAP) School </p>
+      <p class="color"><strong>Year Completed:</strong> 2012-2017</p>
+      <p class="color"><strong>Achievements:</strong> 
+      <ul class="color">  
+        <li>Grade 2: Finished 1st</li>
+        <li>Grade 3: Finished 1st</li>
+        <li>Grade 4: Finished 1st</li>
+        <li>Grade 5: Finished 1st</li>
+        <li>Grade 6: Valedictorian</li>
+      </ul>
+      </p>
+      <p class="color"><strong>High School</strong> Abellana National High School</p>
+      <p class="color"><strong>Year Compelted</strong> 2017-2021</p>
+      <p class="color"><strong>Achievements:</strong> None</p>
+      <p class="color"><strong>Senior High School</strong> Asian College of Technology</p>
+      <p class="color"><strong>Year Compelted</strong> 2021-2023</p>
+      <p class="color"><strong>Achievements:</strong> None</p>
+      <p class="color"><strong>College</strong> Center for Industrial Technology and Enterprise Inc.</p>
+      <p class="color"><strong>Year Compelted</strong> 2023-Present</p>
+      <p class="color"><strong>Achievements:</strong> None</p>
+    </div>
+  </section>
+
+  <section id="seminars">
+    <h2 class="color">Trainings & Seminars</h2>
+    <div class="card">
+      <ul>
+        <li class="color">Training: Pre requisite Activities/Task for NC2 - 2023-2024</li>
+      </ul>
+    </div>
+  </section>
+
+<section id="projects">
+  <h2 class="color">Projects</h2>
+
+  <div class="card">
+    <h3 class="color">Calendar</h3>
+    <img src="images/calendar.png" alt="Calendar" style="width:100%; max-width:400px; border-radius:10px;">
+    <p class="color">A Simple Calendar that shows the holidays in the Philippines</p>
+  </div>
+
+  <div class="card">
+    <h3 class="color">Portfolio</h3>
+    <img src="images/portfolio.png" alt="Portfolio" style="width:100%; max-width:400px; border-radius:10px;">
+    <p class="color">My own Portfolio for Introductions</p>
+  </div>
+</section>
+
+  <section id="experience">
+    <h2 class="color">Job Experience</h2>
+    <div class="card">
+      <p class="color"><strong>Marketing Team</strong></p>
+      <p class="color">Coredev Solutions Inc. | Jan 2023 - April 2023</p>
+      <p class="color">Responsible for Video Advertisements for Future Clients.</p>
+      <p class="color"><strong>Technical Support</strong></p>
+      <p class="color">Alliance Software Inc. | April 2025 - Present</p>
+      <p class="color">Responsible for Fixing Problems facing by Clients</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="color">Contact Me</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rhodnemar Requino | All Rights Reserved.</p>
+  </footer>
+
+  <script src="java\myScript.js"></script>
+  
+</body>
+</html>

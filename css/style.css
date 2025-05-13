@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #121212;
+  }
+
+  header {
+    background-color: #1DB954;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .color{
+    color: white;
+  }
+
+  nav a {
+    color: #191414;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+ #home{
+    color: white;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+  }
+
+ #homee{
+    color: white;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+
+.home-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #181818;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-text {
+  flex: 1 1 60%;
+}
+
+.home-pic {
+  flex: 1 1 35%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.profile-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-text {
+  flex: 1 1 60%;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.card {
+    background: #181818;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+  #projects .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+  #projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  }
+
+.project-title {
+    cursor: pointer;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background-color: #1DB954;
+    color: white;
+    text-align: center;
+    padding: 6px;
+}
